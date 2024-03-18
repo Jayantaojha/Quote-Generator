@@ -14,7 +14,9 @@
 
 <body class="bg-slate-800 flex justify-center items-center h-[100vh]">
 
-    <div class="bg-white p-5 rounded-lg ml-[5vw] mr-[5vw] mb-14">
+    <!-- container div -->
+    <div class="bg-white p-5 rounded-lg ml-[5vw] mr-[5vw] mb-14 min-w-[324px] min-h-[244.8px]"> 
+
         <!-- h1 div -->
         <div class="mb-4">
             <h1 class="text-center text-2xl font-semibold">Quote of the Day</h1>
@@ -23,8 +25,8 @@
 
         <!-- main quote container -->
         <div>
-            <p class="font-semibold text-[#1e1e1a] ">"Peoples don't care about what you say, they care about what you have build"</p>
-            <p class="text-right mt-2 text-sm text-gray-700"><i>-Mark Zuckerburg</i></p>
+            <p class="font-semibold text-[#1e1e1a] min-h-[48px]" id="quote"></p>
+            <p class="text-right mt-2 text-sm text-gray-700" id="author"><i></i></p>
         </div>
 
 
@@ -40,11 +42,13 @@
 
             <!-- button for new quote -->
             <div>
-                <button class="bg-blue-500 hover:bg-blue-900 pt-1 pb-1 pl-2 pr-2 rounded-md text-white font-light">New Quote</button>
+                <button id="new-quote-btn" class="bg-blue-500 hover:bg-blue-900 pt-1 pb-1 pl-2 pr-2 rounded-md text-white font-light">New Quote</button>
             </div>
 
         </div>
 
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
